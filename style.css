@@ -22,7 +22,8 @@ h1 {
 }
 
 #search {
-	width: 100%;
+	width: calc(100% - 20px);
+	max-width: 100%;
 	padding: 10px;
 	margin-bottom: 15px;
 	border: none;
@@ -32,6 +33,9 @@ h1 {
 	color: #fff;
 	outline: none;
 	box-sizing: border-box;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .word {
