@@ -1,11 +1,35 @@
-document.addEventListener("DOMContentLoaded", () => {
-	fetch("words.txt")
-		.then(response => response.text())
-		.then(data => {
-			const dictionaryDiv = document.getElementById("dictionary");
-			const words = data.trim().split("\n\n"); // Words are separated by a blank line
+body {
+	background-color: #1e1e1e;
+	color: #ccc;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+}
 
-			words.forEach(entry => {
-				const lines = entry.split("\n");
-				const word = lines[0].trim();
-				const definition = lines[1]?.
+.container {
+	max-width: 600px;
+	margin: auto;
+	background: #282828;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.word {
+	margin-bottom: 15px;
+}
+
+.word h2 {
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+.word p {
+	margin: 5px 0;
+	color: #bbb;
+}
