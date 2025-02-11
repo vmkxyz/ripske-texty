@@ -18,10 +18,26 @@ body {
 h1 {
 	text-align: center;
 	color: #fff;
+	margin-bottom: 20px;
+}
+
+#search {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	background: #333;
+	color: #fff;
+	outline: none;
 }
 
 .word {
 	margin-bottom: 15px;
+	padding: 10px;
+	background: #333;
+	border-radius: 5px;
 }
 
 .word h2 {
@@ -34,13 +50,7 @@ h1 {
 	color: #bbb;
 }
 
-#search {
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 15px;
-	border: none;
-	border-radius: 5px;
-	font-size: 16px;
-	background: #333;
-	color: #fff;
+.word p:nth-child(3) {
+	font-style: italic;
+	color: #888;
 }
