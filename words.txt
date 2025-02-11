@@ -1,0 +1,11 @@
+Apple
+A fruit that is usually red, green, or yellow.
+She ate an apple for breakfast.
+
+Code
+A set of instructions that a computer can execute.
+He wrote some code to automate the process.
+
+Linux
+An open-source operating system known for stability and security.
+She installed Linux on her laptop.
