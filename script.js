@@ -5,12 +5,21 @@ document.addEventListener("DOMContentLoaded", () => {
 			const dictionaryDiv = document.getElementById("dictionary");
 			const words = data.trim().split("\n\n"); // Words are separated by a blank line
 
-			words.forEach(entry => {
+			// Parse entries and store in an array
+			const entries = words.map(entry => {
 				const lines = entry.split("\n");
-				const word = lines[0].trim();
-				const definition = lines[1]?.trim() || "No definition available.";
-				const example = lines[2]?.trim() || "";
+				return {
+					word: lines[0].trim(),
+					definition: lines[1]?.trim() || "No definition available.",
+					example: lines[2]?.trim() || ""
+				};
+			});
 
+			// Sort entries alphabetically by word
+			entries.sort((a, b) => a.word.localeCompare(b.word));
+
+			// Render sorted words
+			entries.forEach(({ word, definition, example }) => {
 				const wordDiv = document.createElement("div");
 				wordDiv.classList.add("word");
 
